@@ -76,6 +76,7 @@ You can download the image by clicking 👉 [here](https://huggingface.co/datase
         api_base="http://127.0.0.1:11434",  # Default Ollama local server
         num_ctx=8192,
     )
+    out = model(messages=[{"role": "user", "content": [{"text": "hello...", "type": "text"}]}])
 ```
 
 5. **Why this works?**
